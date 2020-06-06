@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bitter", serif;
+}
+
+.header {
+    width: 100%;
+    background: linear-gradient( 180deg, rgba(100, 100, 100, 0.6) 0%, rgba(58, 58, 58, 0.6) 50%, rgba(27, 27, 27, 0.6027544806985294) 100%), url("../imgs/edificios.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-family: "Bitter", serif;
+}
+
+#top-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    padding: 0 150px 0 150px;
+}
+
+#top-nav-items {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+#top-nav a {
+    margin: 15px;
+    text-decoration: none;
+    color: #2c2c2c;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#top-nav #responsive-menu {
+    display: none;
+}
+
+#top-nav a:hover {
+    color: #c99709;
+}
+
+#logo {
+    width: 110px;
+}
+
+.header h3 {
+    margin-top: 150px;
+    display: inline block;
+    vertical-align: middle;
+}
+
+.header button {
+    color: white;
+    font-weight: 600;
+    display: inline block;
+    width: 150px;
+    height: 50px;
+    background-color: #c99709;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    border: none;
+    cursor: pointer;
+}
+
+.services {
+    padding: 60px 0px 60px 0px;
+    text-align: center;
+}
+
+.services h1 {
+    margin-bottom: 60px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 325px;
+    border: 1px solid #bebebe;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+}
+
+.card span {
+    color: #c99709;
+}
+
+.card hr {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 65px;
+    color: #c99709;
+}
+
+.company {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+#media {
+    width: 100%;
+    height: auto;
+}
+
+.company .mission {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f1f1f1;
+    align-items: center;
+}
+
+.inner-card {
+    padding: 45px 35px 45px 35px;
+    width: 75%;
+}
+
+.inner-card h1 {
+    margin-bottom: 25px;
+}
+
+.inner-card img,
+h5,
+p {
+    margin-top: 15px;
+}
+
+.inner-card p {
+    font-size: 0.8em;
+    line-height: 1.7em;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 1.7em;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+ul li {
+    list-style-image: url("../imgs/check0x.png");
+    font-size: 0.8em;
+}
+
+.company .benefits {
+    flex: 1;
+    background: linear-gradient(180deg, #191933d0 0%, #191933d3 100%), url("../imgs/pc.jfif");
+    display: block;
+    justify-content: flex-start;
+    width: 50%;
+    color: white;
+    align-items: center;
+}
+
+.benefits .inner-card {
+    margin-left: 35px;
+}
+
+.benefits .inner-card button {
+    color: white;
+    font-weight: 600;
+    display: inline block;
+    width: auto;
+    padding: 0px 45px 0px 45px;
+    height: 50px;
+    background-color: #c99709;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.why-choose-us {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(180deg, #191933d0 0%, #191933d3 100%), url("../imgs/stats_01.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    align-items: center;
+}
+
+.inner-card-item {
+    display: flex;
+    align-items: center;
+}
+
+.inner-icon {
+    margin-right: 20px;
+    color: #c99709;
+}
+
+.row .presentation {
+    background: #f1f1f1;
+    display: block;
+    width: 50%;
+    color: rgb(124, 124, 124);
+}
+
+#inner-media {
+    display: flex;
+    color: #272727;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    height: 250px;
+    background: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#ham-menu {
+    display: none;
+}
+
+@media all and (max-width: 1100px) {
+    #top-nav {
+        margin: 0;
+        padding: 0 75px 0 75px;
+    }
+    #top-nav a {
+        margin: 5px;
+    }
+    #top-nav #responsive-menu {
+        display: block;
+    }
+    .header ol li {
+        display: none;
+    }
+    .header ol .responsive-menu {
+        display: block;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .row {}
+}
+
+@media all and (max-width: 650px) {
+    .header #top-nav .ham-menu {
+        display: block;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .mission,
+    .why-choose-us {
+        width: 100%;
+        justify-content: center;
+    }
+    .row .why-choose-us {
+        order: 1;
+    }
+    .row .benefits {
+        width: 100%;
+    }
+    .row .benefits .inner-card {
+        margin-left: 0px;
+    }
+    .row .presentation {
+        width: 100%;
+    }
+    .inner-card {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
